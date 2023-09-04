@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Task Manager 📝</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div class="main">
+      <section class="main__section">
+        <div class="main-section__info">
+          <h2>Task Board 🧐</h2>
+          <h3>You can see all your task stuff here...</h3>
+          <br />
+          <hr style="border-top: 1px solid black" />
+        </div>
+        <ul></ul>
+      </section>
+      <form class="main__form">
+        <div class="main__form__body">
+          <h2>Task Manager 📝</h2>
+          <h3>Please, fill the form and add a task...</h3>
+          <br />
+          <hr style="border-top: 1px solid black" />
+          <br />
+          <div class="main__form__line">
+            <div class="main__form__item">
+              <label>Task Name</label>
+              <input id="nameInput" required type="text" />
+            </div>
+          </div>
+          <div class="main__form__line">
+            <div class="main__form__item">
+              <label>Task Owner</label>
+              <input id="ownerInput" required type="text" />
+            </div>
+          </div>
+          <div class="main__form__line">
+            <div class="main__form__item">
+              <label>Task Description</label>
+              <input id="descriptionInput" required type="text" />
+            </div>
+          </div>
+          <div class="main__form__line">
+            <div class="main__form__item">
+              <label>Task Image URL</label>
+              <input id="imgUrlInput" required type="text" />
+            </div>
+          </div>
+          <br />
+        </div>
+        <div class="main__form__buttons">
+          <button type="submit" class="submit-button">Add Task</button>
+          <button class="clear-button">Clear Tasks</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
